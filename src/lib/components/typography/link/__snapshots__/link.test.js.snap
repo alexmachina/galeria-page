@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Link Renders 1`] = `
+<a
+  className="link-0-2-1"
+  href="google.com.br"
+>
+  Google it!
+</a>
+`;

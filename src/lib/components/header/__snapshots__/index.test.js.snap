@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Header Renders 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <div
+    className="redBigBorder-0-2-2"
+  />
+  <div
+    className="brand-0-2-3"
+  >
+    <img
+      alt="Logo Galeria Pagé"
+      className="logo-0-2-5 logo-0-2-4"
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+    <h1
+      className="title-0-2-6"
+    >
+      GaleriaPagé
+    </h1>
+  </div>
+</div>
+`;

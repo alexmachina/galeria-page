@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Typography Subtitle Renders correctly 1`] = `
+<span
+  className="root-0-2-1"
+>
+  Hello, There!
+</span>
+`;

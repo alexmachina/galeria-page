@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Inputs Text Renders correctly 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <div
+    className="label-0-2-2"
+  >
+    <span
+      className="root-0-2-4"
+    >
+      Full Name
+    </span>
+  </div>
+  <div
+    className="input-0-2-3"
+  >
+    <input
+      className="root-0-2-5"
+      onChange={[Function]}
+      type="text"
+      value="Javier Escuella"
+    />
+  </div>
+</div>
+`;

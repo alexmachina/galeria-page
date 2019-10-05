@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Logo Renders 1`] = `
+<img
+  alt="Logo Galeria Pagé"
+  className="logo-0-2-1"
+  src={
+    Object {
+      "process": [Function],
+    }
+  }
+/>
+`;
