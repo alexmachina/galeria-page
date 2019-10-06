@@ -7,8 +7,8 @@ import colors from "../../../../../colors/index";
 
 const useStyles = createUseStyles({
   root: {
-    color: colors.darkGray,
-    fontSize: px(12),
+    color: colors.black,
+    fontSize: px(14),
     width: "100%",
     height: px(40),
     "&:focus": {
@@ -16,7 +16,7 @@ const useStyles = createUseStyles({
     },
     borderRadius: px(12),
     border: `1px solid ${colors.green}`,
-    padding: px(4)
+    paddingLeft: px(8)
   },
   valid: {
     borderRadius: px(4),
@@ -24,12 +24,13 @@ const useStyles = createUseStyles({
   }
 });
 
-const Input = ({ value, onChange }) => {
+const Input = ({ value, onChange, password }) => {
   const classes = useStyles();
+  const type = password ? "password" : "text";
   return (
     <input
       className={classNames(classes.root)}
-      type="text"
+      type={type}
       value={value}
       onChange={e => onChange(e.target.value)}
     />
@@ -38,7 +39,12 @@ const Input = ({ value, onChange }) => {
 
 Input.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  password: PropTypes.bool
+};
+
+Input.defaultProps = {
+  password: false
 };
 
 export default Input;

@@ -6,25 +6,42 @@ import { px } from "../../../units";
 import colors from "../../../colors";
 
 const useStyles = createUseStyles({
-  title: {
+  root: {
     fontSize: px(28),
-    color: colors.black,
-    margin: 0
+    margin: 0,
+    color: colors.black
+  },
+  form: {
+    color: colors.red
   }
 });
 
-const Title = ({ className, children }) => {
+const Title = ({ form, className, styles, children }) => {
   const classes = useStyles();
-  return <h1 className={classNames(classes.title, className)}>{children}</h1>;
+  return (
+    <h1
+      styles={styles}
+      className={classNames({
+        [classes.root]: true,
+        [classes.form]: form
+      })}
+    >
+      {children}
+    </h1>
+  );
 };
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
-  className: PropTypes.string
+  form: PropTypes.bool,
+  className: PropTypes.string,
+  styles: PropTypes.object
 };
 
 Title.defaultProps = {
-  className: ""
+  form: false,
+  className: "",
+  styles: undefined
 };
 
 export default Title;

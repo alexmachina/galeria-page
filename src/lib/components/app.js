@@ -12,6 +12,12 @@ const useStyles = createUseStyles({
       fontWeight: 400,
       boxSizing: "border-box"
     }
+  },
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100%",
+    justifyContent: "center"
   }
 });
 

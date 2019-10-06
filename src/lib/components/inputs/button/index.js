@@ -22,6 +22,9 @@ const useStyles = createUseStyles({
 
     fontWeight: 500,
     fontSize: px(16),
+    "&:hover": {
+      backgroundColor: colors.hoverBlue
+    },
     "&:focus": {
       outline: "0"
     },
@@ -34,7 +37,11 @@ const useStyles = createUseStyles({
 const Button = ({ className, title, onClick }) => {
   const classes = useStyles();
   return (
-    <button type="submit" className={classNames(classes.root)}>
+    <button
+      type="submit"
+      onClick={onClick}
+      className={classNames(classes.root)}
+    >
       {title}
     </button>
   );

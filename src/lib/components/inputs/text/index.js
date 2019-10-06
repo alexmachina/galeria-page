@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { createUseStyles } from "react-jss";
 import { px } from "../../../units";
-import colors from "../../../colors";
 
 import Label from "./components/label";
 import Input from "./components/input";
@@ -23,7 +22,7 @@ const useStyles = createUseStyles({
   }
 });
 
-const TextInput = ({ label, value, onChange }) => {
+const TextInput = ({ label, value, onChange, password }) => {
   const classes = useStyles();
   return (
     <div className={classNames(classes.root)}>
@@ -31,7 +30,7 @@ const TextInput = ({ label, value, onChange }) => {
         <Label>{label}</Label>
       </div>
       <div className={classNames(classes.input)}>
-        <Input value={value} onChange={onChange} />
+        <Input value={value} onChange={onChange} password={password} />
       </div>
     </div>
   );
