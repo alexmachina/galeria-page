@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
@@ -24,12 +24,12 @@ const useStyles = createUseStyles({
 const GaleriaPage = ({ children }) => {
   const classes = useStyles();
   return (
-    <div className={classes.container}>
+    <HelmetProvider>
       <Helmet>
-        <title>Hello Page</title>
+        <title>Galeria Pagé</title>
       </Helmet>
-      {children}
-    </div>
+      <div className={classes.container}>{children}</div>
+    </HelmetProvider>
   );
 };
 
