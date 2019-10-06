@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Title from "./";
+import Title from ".";
 
 describe("Components", () => {
   describe("Typography", () => {

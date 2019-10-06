@@ -21,13 +21,23 @@ const useStyles = createUseStyles({
     border: "none",
 
     fontWeight: 500,
-    fontSize: px(16)
+    fontSize: px(16),
+    "&:focus": {
+      outline: "0"
+    },
+    "&:active": {
+      outline: "0"
+    }
   }
 });
 
 const Button = ({ className, title, onClick }) => {
   const classes = useStyles();
-  return <button className={classNames(classes.root)}>{title}</button>;
+  return (
+    <button type="submit" className={classNames(classes.root)}>
+      {title}
+    </button>
+  );
 };
 
 Button.propTypes = {

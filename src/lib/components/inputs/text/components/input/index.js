@@ -9,12 +9,13 @@ const useStyles = createUseStyles({
   root: {
     color: colors.darkGray,
     fontSize: px(12),
-    height: px(24),
+    width: "100%",
+    height: px(40),
     "&:focus": {
       outline: "none"
     },
-    borderRadius: px(4),
-    border: "1px solid #828282",
+    borderRadius: px(12),
+    border: `1px solid ${colors.green}`,
     padding: px(4)
   },
   valid: {

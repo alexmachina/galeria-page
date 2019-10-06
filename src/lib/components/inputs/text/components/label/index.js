@@ -8,7 +8,7 @@ import colors from "../../../../../colors/index";
 const useStyles = createUseStyles({
   root: {
     color: colors.darkGray,
-    fontSize: px(12)
+    fontSize: px(14)
   }
 });
 

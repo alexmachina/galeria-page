@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Link from "./";
+import Link from ".";
 
 describe("Components", () => {
   describe("Link", () => {
