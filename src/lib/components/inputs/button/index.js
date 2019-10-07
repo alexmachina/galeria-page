@@ -50,7 +50,7 @@ const Button = ({ className, title, onClick }) => {
 Button.propTypes = {
   className: PropTypes.string,
   title: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func
 };
 
 Button.defaultProps = {

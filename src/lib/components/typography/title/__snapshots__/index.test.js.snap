@@ -2,7 +2,7 @@
 
 exports[`Components Typography Title Renders 1`] = `
 <h1
-  className="title-0-2-1"
+  className="root-0-2-1"
 >
   Galeria Page
 </h1>

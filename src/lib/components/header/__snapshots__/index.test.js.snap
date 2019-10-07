@@ -20,7 +20,7 @@ exports[`Components Header Renders 1`] = `
       }
     />
     <h1
-      className="title-0-2-6"
+      className="root-0-2-6"
     >
       GaleriaPagé
     </h1>

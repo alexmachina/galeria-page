@@ -8,20 +8,23 @@ exports[`Components Inputs Text Renders correctly 1`] = `
     className="label-0-2-2"
   >
     <span
-      className="root-0-2-4"
+      className="root-0-2-8"
     >
       Full Name
     </span>
   </div>
   <div
-    className="input-0-2-3"
+    className="inputContainer-0-2-3"
   >
     <input
-      className="root-0-2-5"
+      className="input-0-2-4"
       onChange={[Function]}
       type="text"
       value="Javier Escuella"
     />
   </div>
+  <div
+    className="errorMessage-0-2-7"
+  />
 </div>
 `;

@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { createUseStyles } from "react-jss";
-import { px } from "../../../../../units";
-import colors from "../../../../../colors/index";
+import { px } from "../../../units";
+import colors from "../../../colors/index";
 
 const useStyles = createUseStyles({
   root: {
