@@ -1,12 +1,13 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { createUseStyles } from "react-jss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { px } from "../lib/units";
 import AppDecorator from "../lib/components/app";
-import Login from "./login";
 import Header from "../lib/components/header";
+import Login from "./login";
+import Home from "./home";
 import configStore from "./store/configStore";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const store = configStore();
 const GaleriaPageApp = () => {
@@ -32,7 +33,6 @@ const GaleriaPageApp = () => {
   );
 };
 
-const Home = () => <h1>Ok!</h1>;
 const useStyles = createUseStyles({
   content: {
     marginTop: px(48)

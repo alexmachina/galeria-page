@@ -9,7 +9,7 @@ export const loginStartAction = ({ username, password, ...others }) => ({
   }
 });
 
-export const loginSuccessAction = authToken => ({
+export const loginSuccessAction = ({ authToken }) => ({
   type: LOGIN_SUCCESS,
   payload: { authToken }
 });

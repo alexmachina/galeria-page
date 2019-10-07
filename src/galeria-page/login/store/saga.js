@@ -3,7 +3,6 @@ import { loginSuccessAction, loginFailAction } from "./actionCreators";
 import { LOGIN_START } from "./actionNames";
 import { authenticateUser } from "./api";
 
-// worker Saga: will be fired on USER_FETCH_REQUESTED actions
 function* login({ payload }) {
   const { username, password, history } = payload;
   try {
@@ -12,7 +11,9 @@ function* login({ payload }) {
       password
     });
     if (status) {
+      debugger;
       yield put(loginSuccessAction({ authToken: data }));
+      localStorage.setItem("authToken", data);
       history.push("home");
     } else {
       yield put(loginFailAction({ errorMessage: data }));
