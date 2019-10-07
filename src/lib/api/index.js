@@ -10,3 +10,5 @@ export const post = async (url, payload) => {
   const json = await response.json();
   return json;
 };
+
+export const baseUrl = "http://test-frontend-galeriapage.herokuapp.com";
