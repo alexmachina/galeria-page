@@ -30,7 +30,7 @@ const Login = ({
           <TextField
             id="username"
             name="username"
-            label="E-mail"
+            label="Usuário"
             value={values.username}
             error={touched.username && errors.username}
             onChange={handleChange}
@@ -55,7 +55,7 @@ const Login = ({
         <div className={classNames(classes.field, classes.button)}>
           <Button title="Continuar" />
         </div>
-        <div className={classNames(classes.errorMessage)}>{errorMessage}</div>
+        <div className={classNames(classes.errorMessage)}></div>
       </div>
       <div className={classes.register}>
         <Link to="">Não tem cadastro? Cadastre-se</Link>

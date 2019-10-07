@@ -1,10 +1,9 @@
 import { withFormik } from "formik";
+
 import * as Yup from "yup";
 
 const validationSchema = Yup.object().shape({
-  username: Yup.string()
-    .required("Por favor, coloque seu e-mail")
-    .email("Por favor, coloque um e-mail valido"),
+  username: Yup.string().required("Por favor, coloque seu e-mail"),
   password: Yup.string().required("Por favor, coloque sua senha")
 });
 
@@ -12,12 +11,14 @@ const mapPropsToValues = () => ({ username: "", password: "" });
 
 const handleSubmit = (payload, formikBag) => {
   const {
-    props: { login },
+    props: { login, history },
     setSubmitting
   } = formikBag;
   const { username, password } = payload;
 
-  login({ username, password });
+  debugger;
+  login({ username, password, history });
+
   setSubmitting(false);
 };
 
