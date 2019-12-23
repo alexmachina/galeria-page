@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'npm install'
         sh 'npm build'
+        sh 'echo "===== VIVA A PORRA DO GARÇOM ====="'
       }
     }
   }
